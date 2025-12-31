@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 resource "aws_iam_role" "eks_role" {
-  name = "eks-terraform"
+  name = "eks-terraform-sahil"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
@@ -57,7 +57,7 @@ resource "aws_eks_cluster" "eks_cluster" {
 
 
 resource "aws_iam_role" "eks_node_role" {
-  name = "eks-node-role-terraform"
+  name = "eks-node-role-terraform-sahil"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
